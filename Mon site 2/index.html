@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site d'Acor x</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyBcbCUOcZ6ORWC8cMYUCbJ5FsOhb-SavDs",
+    authDomain: "acor-x.firebaseapp.com",
+    projectId: "acor-x",
+    storageBucket: "acor-x.appspot.com",
+    messagingSenderId: "1028221215404",
+    appId: "1:1028221215404:web:9367a597bd705f3c98b509",
+    measurementId: "G-0Z86VXNXNB"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+  <header>
+    <nav>
+       <div class="menu">
+    <div class="logo">
+        <img src="C:\Users\33610\Desktop\ARTHUR\Mon site\logo.png" alt="Logo">
+        Site d'Acor x
+    </div>
+    <div class="menu-buttons">
+        <li><button onclick="scrollToSection('home')" class="menu-button">Accueil</button></li>
+        <li><button onclick="scrollToSection('twitch')" class="menu-button">Twitch</button></li>
+        <li><button onclick="scrollToSection('tiktok')" class="menu-button">TikTok</button></li>
+        <li><button onclick="openYouTubeChannel()" class="menu-button">YouTube</button></li>
+        <li><button onclick="openLink('C:\Users\33610\Desktop\ARTHUR\Mon site 2\IAcor x.html')" class="menu-button">IAcor x</button></li>
+    </div>
+        </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h2>Salut, c'est moi Acor x</h2>
+      <p>Bienvenue sur mon site !</p>
+    </section>
+
+    <section id="twitch">
+      <h2>Twitch</h2>
+      <p>Retrouvez-moi en direct sur Twitch :</p>
+      <button onclick="openLink('https://www.twitch.tv/acor_x')" class="button">Twitch</button>
+    </section>
+
+    <section id="tiktok">
+      <h2>TikTok</h2>
+      <p>Suivez-moi sur TikTok :</p>
+      <button onclick="openLink('https://www.tiktok.com/@acor_x')" class="button">TikTok</button>
+    </section>
+
+    <section id="youtube">
+      <h2>YouTube</h2>
+      <p>Abonnez-vous à ma chaîne YouTube :</p>
+      <button onclick="openLink('https://www.youtube.com/@acorx')" class="button">YouTube</button>
+    </section>
+
+    <section id="ia">
+      <h2>IAcor x</h2>
+      <p>Découvrez mon IA "IAcor x" :</p>
+      <button onclick="openLink('https://buildai.space/app/iacor-x-app')" class="button">IAcor x</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Dernière mise à jour : <span id="last-update"></span></p>
+  </footer>
+
+  <button id="scroll-top-button" class="show">&#8593;</button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
